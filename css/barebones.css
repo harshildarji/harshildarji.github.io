@@ -128,7 +128,7 @@ html {
 	text-align: center;
 	display: grid;
 	grid-gap: 20px;
-	gap: 20px;
+	gap: 0px 50px;
 	
 	/* by default use min 200px wide columns auto-fit into width */
 	grid-template-columns: minmax(200px, 1fr);
