@@ -1,56 +1,299 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta name="generator" content="Hugo 0.68.3" />
-  <meta charset="utf-8">
-  <title>Harshil Darji</title>
-  <meta name="description" content="Personal Page">
-  <meta name="author" content="Harshil Darji">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/fonts.css" type="text/css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/vncnt.css">
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.6.0/js/all.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshil Darji</title>
+    <meta name="description"
+        content="I am a Data Scientist and AI Researcher working at the intersection of NLP and law, specializing in Legal NER and German legal text processing.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://harshildarji.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harshildarji.com/">
+    <meta property="og:title" content="Harshil Darji">
+    <meta property="og:description"
+        content="I am a Data Scientist and AI Researcher working at the intersection of NLP and law, specializing in Legal NER and German legal text processing.">
+    <meta property="og:image" content="https://harshildarji.com/avatar.jpg">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://harshildarji.com/">
+    <meta name="twitter:title" content="Harshil Darji">
+    <meta name="twitter:description"
+        content="I am a Data Scientist and AI Researcher working at the intersection of NLP and law, specializing in Legal NER and German legal text processing.">
+    <meta name="twitter:image" content="https://harshildarji.com/avatar.jpg">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="landingpage">
-    <div class="grid-container fivetoseven" role="main">
-      <div class="item" aria-label="Avatar">
-        <section id="avatar">
-          <img class="avatar" src="img/avatar.jpg" alt="avatar.jpg">
-        </section>
-      </div>
-      <div class="grid-container full autocenter">
-        <section id="bio" aria-label="Biography">
-          <h1 class="h3-like" aria-level="1" aria-label="Name">Harshil Darji</h1>
-          <p class="reset-margin" title="About" aria-label="About">Data Scientist / KI-Experte,<br>Hochschule für
-            Technik und Wirtschaft Berlin,<br>Berlin, Germany</p>
-        </section>
-        <section id="contact" aria-label="Contact">
-          <div class="icons" aria-label="Links">
-            <h2 class="h3-like" aria-label="Link Icons">
-              <a class="icon" href="mailto:hjdarjiads@gmail.com" target="_blank" rel="noopener me">
-                <i class="fas fa-envelope" title="contact" aria-label="Send email."></i></a>
-              <a class="icon" href="https://github.com/harshildarji" target="_blank" rel="noopener me">
-                <i class="fab fa-github" title="github" aria-label="Go to github."></i></a>
-              <a class="icon" href="https://scholar.google.com/citations?user=c5KToK8AAAAJ" target="_blank"
-                rel="noopener me">
-                <i class="fas fa-graduation-cap" title="google-scholar" aria-label="Go to google-scholar."></i></a>
-              <a class="icon" href="https://linkedin.com/in/harshildarji" target="_blank" rel="noopener me">
-                <i class="fab fa-linkedin" title="linkedin" aria-label="Go to linkedin."></i></a>
-              <a class="icon" href="https://stackoverflow.com/users/5254754/harshil" target="_blank" rel="noopener me">
-                <i class="fab fa-stack-overflow" title="stack-overflow" aria-label="Go to stack-overflow."></i></a>
-            </h2>
-          </div>
-        </section>
-      </div>
+    <header class="fixed-header">
+        <div class="header-container">
+            <h1>Harshil Darji</h1>
+            <button type="button" class="burger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="tabs">
+            <button type="button" class="tab-button active" data-tab="about">About</button>
+            <button type="button" class="tab-button" data-tab="experience">Experience</button>
+            <button type="button" class="tab-button" data-tab="publications">Publications</button>
+            <button type="button" class="tab-button" data-tab="education">Education</button>
+            <button type="button" class="tab-button" data-tab="projects">Projects</button>
+        </nav>
+
+        <div class="tab-content active" id="about">
+            <div class="about-layout">
+                <div class="about-left">
+                    <img src="avatar.jpg" alt="Harshil Darji" class="avatar">
+                </div>
+                <div class="about-right">
+                    <p class="subtitle">Data Scientist & AI Researcher</p>
+                    <div class="bio-section">
+                        <p>I am a data scientist working at the intersection of natural language processing and law.
+                            My research focuses on building and evaluating models for Legal Named Entity Recognition and
+                            Relation Extraction, as well as constructing citation networks and structured datasets for
+                            German legal texts. I am particularly interested in how domain-adapted language models can
+                            support reliable, privacy-compliant processing of court decisions and legal documents.</p>
+                        <p>Beyond model development, I work on turning research prototypes into usable systems,
+                            including anonymization pipelines, similarity search, and graph-based analysis of legal case
+                            relationships. My goal is to combine careful data modeling with robust machine learning to
+                            make complex legal texts more accessible and analyzable at scale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="experience">
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="period">Dec 2024 – Present</div>
+                    <h3 class="position">Data Scientist / KI-Experte</h3>
+                    <div class="organization">Hochschule für Technik und Wirtschaft Berlin, Berlin, Germany</div>
+                </div>
+                <div class="description">
+                    <ul>
+                        <li>Developed a citation network of German legal cases using Neo4j, allowing for efficient
+                            cross-referencing and analysis of case relationships.</li>
+                        <li>Enhanced the previous Legal NER LLM to automate the anonymization of German legal documents,
+                            ensuring compliance with privacy regulations.</li>
+                        <li>Implemented a legal text similarity search as a foundation for a RAG-based system to support
+                            more accurate, context-aware legal research.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="period">Sep 2021 – Sep 2024</div>
+                    <h3 class="position">Data Science Researcher</h3>
+                    <div class="organization">University of Passau, Passau, Germany</div>
+                </div>
+                <div class="description">
+                    <ul>
+                        <li>Fine-tuned a German BERT model on the legal dataset, achieving an F1 score of 99.49%, and
+                            compiled a dataset of 2944 German legal references.</li>
+                        <li>Co-developed a GDPR-compliant dataset of 44 privacy policies with 33 entity types, enhancing
+                            Named Entity Recognition (NER) and Relation Extraction (RE) capabilities for NLP models.
+                        </li>
+                        <li>Independently fine-tuned and published LLMs for NER and RE in privacy policies, achieving F1
+                            scores of 74% and 83%, respectively.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="period">Oct 2016 – Jan 2017</div>
+                    <h3 class="position">Junior Android Developer</h3>
+                    <div class="organization">Profero Techno Pvt. Ltd., Mumbai, India</div>
+                </div>
+                <div class="description">
+                    <ul>
+                        <li>Developed an Android application to help local businesses promote sales with hourly
+                            discounts, integrating Firebase for the real-time database.</li>
+                        <li>Wrote REST web services to support Android and iOS versions and built a business interface
+                            for managing discounts independently.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="publications">
+            <ul class="publications-list">
+                <li class="publication-item">
+                    <div class="pub-venue">2025 – JURIX
+                        <span class="venue-full-name">Legal Knowledge and Information Systems</span>
+                    </div>
+                    <div class="pub-title">Segmentation and Processing of German Court Decisions from Open Legal Data
+                    </div>
+                    <div class="authors">Harshil Darji, Martin Heckelmann, Christina Kratsch, Gerard de Melo</div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-venue">2024 – OSSYM
+                        <span class="venue-full-name">Open Search Symposium</span>
+                    </div>
+                    <div class="pub-title">A dataset of GDPR compliant NER for privacy policies</div>
+                    <div class="authors">Harshil Darji, Stefan Becher, Jelena Mitrović, Armin Gerl, Michael Granitzer
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-venue">2024 – JURIX
+                        <span class="venue-full-name">Legal Knowledge and Information Systems</span>
+                    </div>
+                    <div class="pub-title">Challenges and Considerations in Annotating Legal Data: A Comprehensive
+                        Overview</div>
+                    <div class="authors">Harshil Darji, Jelena Mitrović, Michael Granitzer</div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-venue">2023 – ICAIL
+                        <span class="venue-full-name">International Conference on Artificial Intelligence and Law</span>
+                    </div>
+                    <div class="pub-title">A Dataset of German Legal Reference Annotations</div>
+                    <div class="authors">Harshil Darji, Jelena Mitrović, Michael Granitzer</div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-venue">2023 – ICAART
+                        <span class="venue-full-name">International Conference on Agents and Artificial
+                            Intelligence</span>
+                    </div>
+                    <div class="pub-title">German BERT Model for Legal Named Entity Recognition</div>
+                    <div class="authors">Harshil Darji, Jelena Mitrović, Michael Granitzer</div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-venue">2021 – KDIR
+                        <span class="venue-full-name">International Joint Conference on Knowledge Discovery, Knowledge
+                            Engineering, and Knowledge Management</span>
+                    </div>
+                    <div class="pub-title">Exploring Semantic Similarity Between German Legal Texts and Referred Laws
+                    </div>
+                    <div class="authors">Harshil Darji, Jelena Mitrović, Michael Granitzer</div>
+                </li>
+                <li class="publication-item">
+                    <div class="pub-venue">2021 – LOD
+                        <span class="venue-full-name">International Conference on Machine Learning, Optimization, and
+                            Data Science</span>
+                    </div>
+                    <div class="pub-title">Experiments on Properties of Hidden Structures of Sparse Neural Networks
+                    </div>
+                    <div class="authors">Julian Stier, Harshil Darji, Michael Granitzer</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="education">
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="period">2018 – 2021</div>
+                    <h3 class="position">MS Computer Science</h3>
+                    <div class="organization">University of Passau, Passau, Germany</div>
+                </div>
+                <div class="description">Thesis: <a href="https://arxiv.org/pdf/2407.20601" target="_blank"
+                        rel="noopener noreferrer" aria-label="thesis">Investigating Sparsity in Recurrent Neural
+                        Networks</a></div>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="period">2012 – 2016</div>
+                    <h3 class="position">BS Information Technology</h3>
+                    <div class="organization">Gujarat Technological University, Gujarat, India</div>
+                </div>
+                <div class="description">Thesis: Steganography</div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="projects">
+            <div class="project-section">
+                <h3 class="section-title">Demos</h3>
+
+                <ul class="resource-list">
+                    <li>
+                        <a href="https://huggingface.co/spaces/harshildarji/Juristische-Anonymisierung" target="_blank"
+                            rel="noopener noreferrer">
+                            Juristische Anonymisierung
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://huggingface.co/spaces/harshildarji/Juristische-NER" target="_blank"
+                            rel="noopener noreferrer">
+                            Juristische Named Entity Recognition
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://huggingface.co/spaces/harshildarji/German-Legal-Case-Viewer" target="_blank"
+                            rel="noopener noreferrer">
+                            German Legal Case Viewer
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h3 class="section-title">Models</h3>
+
+                <ul class="resource-list">
+                    <li>
+                        <a href="https://huggingface.co/harshildarji/JuraNER" target="_blank" rel="noopener noreferrer">
+                            JuraNER
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h3 class="section-title">Datasets</h3>
+
+                <ul class="resource-list">
+                    <li>
+                        <a href="https://huggingface.co/datasets/harshildarji/openlegaldata" target="_blank"
+                            rel="noopener noreferrer">
+                            Clean Open Legal Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://huggingface.co/datasets/harshildarji/Reber-Grammar" target="_blank"
+                            rel="noopener noreferrer">
+                            Reber-Grammar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <footer>
+        <div class="contact-links">
+            <a href="mailto:harshil.darji@outlook.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com/in/harshildarji" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/harshildarji" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=c5KToK8AAAAJ" target="_blank" rel="noopener noreferrer"
+                aria-label="Google Scholar">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+        </div>
+        <p>Berlin · 2026</p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
