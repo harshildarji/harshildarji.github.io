@@ -44,40 +44,53 @@ body {
 
 .burger-menu {
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
+    position: relative;
+    width: 30px;
+    height: 30px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.25rem;
+    padding: 0;
     z-index: 1001;
-    width: 30px;
-    height: 30px;
 }
 
 .burger-menu span {
-    width: 22px;
+    position: absolute;
+    left: 4px;
+    right: 4px;
     height: 2px;
     background: var(--color-text);
     display: block;
     transform-origin: center;
-    transition: transform 200ms ease, opacity 120ms ease;
+    transition: transform 200ms ease, top 200ms ease, opacity 0s linear;
+}
+
+.burger-menu span:nth-child(1) {
+    top: 8px;
+}
+
+.burger-menu span:nth-child(2) {
+    top: 14px;
+}
+
+.burger-menu span:nth-child(3) {
+    top: 20px;
+}
+
+.burger-menu.active span:nth-child(1) {
+    top: 14px;
+    transform: rotate(45deg);
 }
 
 .burger-menu.active span:nth-child(2) {
     opacity: 0;
-    transition: opacity 80ms ease;
-}
-
-.burger-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transition: opacity 0s;
 }
 
 .burger-menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    top: 14px;
+    transform: rotate(-45deg);
 }
-
 
 h1 {
     font-size: 1.8rem;
