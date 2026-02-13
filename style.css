@@ -60,21 +60,24 @@ body {
     width: 22px;
     height: 2px;
     background: var(--color-text);
-    transition: all 0.3s ease;
     display: block;
-}
-
-.burger-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform-origin: center;
+    transition: transform 200ms ease, opacity 120ms ease;
 }
 
 .burger-menu.active span:nth-child(2) {
     opacity: 0;
+    transition: opacity 80ms ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .burger-menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(5px, -5px);
 }
+
 
 h1 {
     font-size: 1.8rem;

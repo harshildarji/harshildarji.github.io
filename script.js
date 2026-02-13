@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tabs.classList.remove('active');
                 burgerMenu.classList.remove('active');
             }
+            window.scrollTo({ top: 0, behavior: 'auto' });
         });
     });
 
