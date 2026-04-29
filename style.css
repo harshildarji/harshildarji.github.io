@@ -4,7 +4,14 @@
     --color-text-light: #666;
     --color-accent: #2c5f4f;
     --color-border: #e5e5e0;
-    --font-sans: 'Inter', sans-serif;
+    --font-sans: 'General Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.period,
+.pub-venue {
+    font-family: var(--font-mono);
+    font-feature-settings: 'tnum';
 }
 
 * {
